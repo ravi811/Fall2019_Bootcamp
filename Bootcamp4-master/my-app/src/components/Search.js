@@ -24,7 +24,7 @@ class Search extends React.Component {
 				<input 
 					type="text"
 					ref={ (value) => {this.refValue = value} }
-					placeholder="Type to Filter"
+					placeholder="Search"
 					onChange={this.filterUpdate.bind(this)}
 				/>
 				
