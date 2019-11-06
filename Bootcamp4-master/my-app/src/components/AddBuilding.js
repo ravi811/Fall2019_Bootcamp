@@ -81,7 +81,7 @@ class AddBuilding extends React.Component{
                                     type="text" 
                                     name="address"
                                     id="listing-address"
-                                    placeholder="Enter building address"
+                                    placeholder="Enter address"
                                     onChange={this.onChange}
                                 ></Input>
                                 <Button
