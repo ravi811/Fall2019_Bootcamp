@@ -15,23 +15,12 @@ class ViewBuilding extends React.Component {
 				if(!directory.coordinates) {
 					return (
 						<BuildingInfo directory={directory} />
-						// <div>
-						// 	<p>Code: {directory.code}</p>
-						// 	<p>Name: {directory.name}</p>
-						// 	<p>Coordinates not defined</p>
-						// 	<p>Address: {directory.address}</p>
-						// </div>
 					)
 				}
 				
 				return(
 					<div>
 						<BuildingInfo directory={directory} />
-						{/* <p>Code: {directory.code}</p>
-						<p>Name: {directory.name}</p>
-						<p>Latitude: {directory.coordinates.latitude}</p>
-						<p>Longitude: {directory.coordinates.longitude}</p>
-						<p>Address: {directory.address}</p> */}
 					</div>
 				)
 				
@@ -39,7 +28,7 @@ class ViewBuilding extends React.Component {
 
 		return (
 			<div>
-				<p style={{backgroundColor: '#ffffff'}}>
+				<p style={{backgroundColor: '#ff0000'}}>
 					{' '}
 					<i>Click on a name to view more information</i>
 				</p>
