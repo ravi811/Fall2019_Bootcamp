@@ -4,9 +4,8 @@ import RemoveBuilding from './RemoveBuilding';
 class BuilingList extends React.Component {
 
 	render() {
-		//console.log('This is my directory file', this.props.data);
 		
-		const { data, filterText, selectedUpdate } = this.props;
+		const {data, filterText, selectedUpdate } = this.props;
 
 		const buildingList = data
 			.filter(name => {
@@ -20,14 +19,13 @@ class BuilingList extends React.Component {
 							{directory.name}
 						</td>
 						<RemoveBuilding key={directory.id} directory={directory} delBuilding={this.props.delBuilding}/>
-
 					</tr>
 				);
 		});
 		
 		return (
 			<div>
-				{buildingList}
+			{buildingList}
 			</div>
 		);
 	}
